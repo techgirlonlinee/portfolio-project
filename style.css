@@ -99,12 +99,23 @@ a {
   section.info {
     width: 40%;
     border-right: 1px solid #0d0d0d;
-    padding: 20px;
+    padding: 20px 30px;
+    position: sticky;
+    height: 100vh;
   }
 
   section.project-list {
     width: 70%;
+    height: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
   }
+
+  .project-title {
+    height: 20vh;
+    transition: all 0.2s ease;
+  }
+
   .selected-project {
     display: none;
   }
@@ -122,5 +133,25 @@ a {
     text-align: center;
     margin: 4px;
     font-size: 14px;
+  }
+
+  .in-relation:hover {
+    background-color: #f28040;
+  }
+
+  .discontent:hover {
+    background-color: #dd3333;
+  }
+
+  .public:hover {
+    background-color: #3c8149;
+  }
+
+  .herma:hover {
+    background-color: #2361ff;
+  }
+
+  .roundtable:hover {
+    background-color: #7b78ed;
   }
 }
