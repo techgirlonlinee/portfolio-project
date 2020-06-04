@@ -4,40 +4,16 @@
 }
 
 @font-face {
-  font-family: Kale Sans;
-  src: url(assets/KaleSans.woff);
-}
-
-@font-face {
-  font-family: Jabin;
-  src: url(assets/Jabin-Regular.woff);
-}
-
-@font-face {
-  font-family: NeueMachina;
-  src: url(assets/NeueMachina.woff);
-}
-
-@font-face {
   font-family: Parabole;
   src: url(assets/ParaboleTrial-Regular.woff);
 }
 
 body {
   font-family: Graphik, Arial, Helvetica, sans-serif;
-  /* font-family: NeueMachina, Arial, Helvetica, sans-serif; */
   padding: 10px;
   background-color: #eee;
   color: #0033ff;
-  /* background-color: #000;
-  color: #eee; */
 }
-
-/* h1 {
-  font-family: Kale Sans, "Courier New", Courier, monospace;
-  font-size: 72px;
-  line-height: 0.9;
-} */
 
 h1 {
   font-family: Parabole, "Courier New", Courier, monospace;
@@ -53,10 +29,6 @@ section.info .role,
   margin-top: 24px;
 }
 
-/* section.info {
-  background-color: #0d0d0d;
-  color: #eee;
-} */
 section.info .role {
   font-size: 22px;
   line-height: 1.2;
@@ -75,6 +47,20 @@ section.info .contact a {
   color: #0033ff;
   text-decoration: none;
 }
+
+section.info .contact a:hover {
+  color: #6460e9;
+}
+
+.web-link {
+  font-size: 14px;
+  color: #0033ff;
+}
+
+.web-link:hover {
+  color: #6460e9;
+}
+
 .tags {
   display: none;
 }
@@ -118,7 +104,6 @@ section.project-list {
 
 .project-title {
   border-top: 1px solid #0033ff;
-  /* border-bottom: 1px solid #0d0d0d; */
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -135,7 +120,7 @@ h2 {
 
 .expand {
   padding: 20px;
-  background-color: #f2f2f2;
+  /* background-color: #000; */
   display: none;
 }
 
@@ -156,7 +141,6 @@ h2 {
 
 .open-title.active .project-title {
   background-color: #2361ff;
-  /* border-bottom: 1px solid #2361ff; */
   color: white;
   position: relative;
 }
@@ -263,7 +247,7 @@ h2 {
   }
 
   .mob-img {
-    height: 478px;
+    height: 477px;
     width: 100%;
   }
 }
@@ -332,9 +316,14 @@ h2 {
     margin-right: 20px;
   }
 
+  figure {
+    margin-top: -20px;
+  }
+
   .mobile-descript p {
-    margin-bottom: 20px;
-    width: 82%;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 42%;
   }
 
   section.project-list {
@@ -380,6 +369,7 @@ h2 {
   [data-project="roundtable-tag"] .roundtable-tag {
     background-color: #2361ff;
     color: white;
+    transition: all 0.3s ease;
   }
 
   /* .inrelation-tag.active,
