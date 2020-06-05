@@ -274,7 +274,7 @@ h2 {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   body {
     padding: 0;
     display: flex;
@@ -283,7 +283,7 @@ h2 {
 
   h1 {
     /* font-size: 72px; */
-    font-size: 86px;
+    /* font-size: 86px; */
     line-height: 1.05;
   }
 
@@ -420,6 +420,11 @@ h2 {
     display: none;
   }
 
+  @media (max-width: 900px) {
+    h1 {
+      font-size: 64px;
+    }
+  }
   /* CURSOS FOLLOW */
 
   [class*="parrot"] {
@@ -491,13 +496,13 @@ h2 {
   }
 }
 
-@media (min-resolution: 192dpi) and (max-width: 700px) {
+@media (min-resolution: 192dpi) and (max-width: 800px) {
   /* Retina-specific stuff here */
   .intro .headshot {
     background-image: url(../assets/denis_mobile@2x.jpg);
   }
 }
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 801px) {
   .intro .headshot {
     background-image: url(../assets/denis_desktop.jpg);
   }
